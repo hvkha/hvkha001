@@ -1,0 +1,201 @@
+/*icon*/
+.wrapper-right[b-2egs4vqnki]{
+    display:block;
+    margin-right:auto;
+}
+.icon-header[b-2egs4vqnki]{
+    height:20px;
+    width:20px;
+}
+.container[b-2egs4vqnki] {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    background: black;
+}
+.row[b-2egs4vqnki]{
+    display:flex;
+    align-items:center;
+}
+/*logo*/
+.logo[b-2egs4vqnki]{
+    display:block;
+    max-width:100px;
+}
+.logo img[b-2egs4vqnki]{
+    max-width:100%;
+}
+.wrapper-left[b-2egs4vqnki]{
+    margin-left: auto;
+}
+/*Thanh tìm kiếm*/
+.search-box[b-2egs4vqnki]{
+    margin-left:auto;
+}
+    .search-box input[b-2egs4vqnki] {
+        height: 25px;
+        border:none;
+        outline: 0px;
+    }
+    .search-box .sb-sbm[b-2egs4vqnki] {
+        width: 45px;
+        color: transparent;
+        background: transparent 
+        url('image/icon/search.png')
+        no-repeat center;
+        background-size: contain;
+        border: none;
+    }
+    .search-box .sb-text[b-2egs4vqnki]{
+        border-radius: 20px;
+        padding: 0 10px;
+        line-height:25px;
+    }
+.clearfix[b-2egs4vqnki]:after {
+    display: block;
+    clear: both;
+}
+
+.wrapper[b-2egs4vqnki] {
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    background: #3e3436;
+}
+/*----- Phần menu -----*/
+.menu[b-2egs4vqnki] {
+    width: 1000px;
+    margin: 0px auto;
+    background: orange;
+    height: 50px;
+}
+
+    .menu li[b-2egs4vqnki] {
+        margin: 0px;
+        list-style: none;
+        font-family: 'Ek Mukta';
+    }
+
+    .menu a[b-2egs4vqnki] {
+        transition: all linear 0.15s;
+        color: #919191;
+        text-decoration: none;
+    }
+
+    .menu li:hover > a[b-2egs4vqnki], .menu .current-item > a[b-2egs4vqnki] {
+        text-decoration: none;
+        color: #be5b70;
+    }
+
+    .menu .arrow[b-2egs4vqnki] {
+        font-size: 11px;
+        line-height: 0%;
+    }
+    /*----- css cho phần menu cha -----*/
+    .menu > ul > li[b-2egs4vqnki] {
+        float: left;
+        display: inline-block;
+        position: relative;
+        font-size: 19px;
+    }
+
+        .menu > ul > li > a[b-2egs4vqnki] {
+            padding: 10px 40px;
+            display: inline-block;
+            color: white;
+        }
+
+        .menu > ul > li:hover > a[b-2egs4vqnki], .menu > ul > .current-item > a[b-2egs4vqnki] {
+            background: #2e2728;
+        }
+    /*----css cho menu con----*/
+    .menu li:hover .sub-menu[b-2egs4vqnki] {
+        z-index: 1;
+        opacity: 1;
+    }
+
+.sub-menu[b-2egs4vqnki] {
+    width: 160%;
+    padding: 5px 0px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    background: #2e2728;
+}
+
+    .sub-menu li[b-2egs4vqnki] {
+        display: block;
+        font-size: 16px;
+    }
+
+        .sub-menu li a[b-2egs4vqnki] {
+            padding: 10px 30px;
+            display: block;
+        }
+
+            .sub-menu li a:hover[b-2egs4vqnki], .sub-menu .current-item a[b-2egs4vqnki] {
+                background: #3e3436;
+            }
+marquee[b-2egs4vqnki]{
+    background-color:black;
+    color:white;
+    border:solid orange;
+}
+
+
+.main[b-2egs4vqnki]{
+}
+.page[b-2egs4vqnki] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+*[b-2egs4vqnki], *[b-2egs4vqnki]:before, *[b-2egs4vqnki]:after {
+    box-sizing: border-box;
+}
+/*footer*/
+.footer[b-2egs4vqnki] {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: black;
+}
+    .footer > *[b-2egs4vqnki] {
+        flex: 1 100%;
+    }
+    .main-footer[b-2egs4vqnki]{
+        display:flex;
+    }
+    .footer-right[b-2egs4vqnki]{
+        margin-right:auto;
+    }
+    .foot-right img[b-2egs4vqnki]{
+        width: 50%;
+    }
+    h2[b-2egs4vqnki]{
+        font-weight:600;
+        font-size:17px
+    }
+.footer ul[b-2egs4vqnki] {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li[b-2egs4vqnki] {
+    line-height: 2em;
+}
+.footer-left[b-2egs4vqnki] {
+   margin-left:auto;
+}
+.socials[b-2egs4vqnki] {
+    display: inline-block;
+    margin-right: 10px;
+}
+    .socials a img[b-2egs4vqnki] {
+        height: 40px;
+        width: 40px;
+    }

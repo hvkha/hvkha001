@@ -1,0 +1,56 @@
+﻿@page "/editanphuoc/{id}"
+@inherits EditAnPhuocBase
+
+<EditForm Model="@AnPhuoc">
+    <hr />
+    <div class="form-group row">
+        <label for="Tensp" class="col-sm-2 col-form-label">Tên sản phẩm:</label>
+    </div>
+    <div class="col-sm-10">
+        <InputText id="Tensp" class="form-control" placeholder="Tensp"
+                   @bind-Value="AnPhuoc.Tensp"></InputText>
+    </div>
+
+    <div class="form-group row">
+        <label for="Hoatiet" class="col-sm-2 col-form-label">Họa tiết:</label>
+    </div>
+    <div class="col-sm-10">
+        <InputText id="Hoatiet" class="form-control" placeholder="Hoatiet"
+                   @bind-Value="AnPhuoc.Hoatiet"></InputText>
+    </div>
+
+    <div class="form-group row">
+        <label for="Gia" class="col-sm-2 col-form-label">Giá:</label>
+    </div>
+    <div class="col-sm-10">
+        <InputText id="Gia" class="form-control" placeholder="Gia"
+                   @bind-Value="AnPhuoc.Gia "></InputText>
+    </div>
+
+    <div class="form-group row">
+        <label for="Thongtin" class="col-sm-2 col-form-label">Thông tin:</label>
+    </div>
+    <div class="col-sm-10">
+        <InputText id="Thongtin" class="form-control" placeholder="Thongtin"
+                   @bind-Value="AnPhuoc.Thongtin "></InputText>
+    </div>
+
+    <div class="form-group row">
+        <label for="loaisp" class="col-sm-2 col-form-label">Loại sản phẩm:</label>
+    </div>
+    @if (Loaisps == null)
+    {
+        <div class="spinner"></div>
+    }
+    else
+    {
+    <div class="col-sm-10">
+        <InputSelect id="loaisp" @bind-Value="LoaispId">
+            @foreach (var loai in Loaisps)
+            {
+                        <option value="@loai.LoaispId">@loai.LoaispName</option>
+            }
+        </InputSelect>
+    </div>
+    }
+</EditForm>

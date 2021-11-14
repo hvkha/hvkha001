@@ -1,0 +1,20 @@
+﻿@page "/"
+@inherits AnPhuocListBase
+    <div id="slider">
+        <figure>
+            <img src="slide1.png" />
+            <img src="slide2.png" />
+            <img src="slide3.jpg" />
+            <img src="slide4.png" />
+        </figure>
+    </div>
+    <div class="sp">
+        <input type="checkbox" id="showFooter" @bind="ShowFooter" />
+        <label for="showFooter">ShowFooter</label>
+        <div class="card-deck">
+            @foreach (var anphuoc in AnPhuocs)
+            {
+                <HienthiSanpham AnPhuoc="anphuoc" ShowFooter="ShowFooter"></HienthiSanpham>
+            }
+        </div>
+    </div>
